@@ -1,4 +1,4 @@
-package com.liumapp.demo.hystrix.client.b;
+package com.liumapp.demo.feign.client.b;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -10,7 +10,7 @@ import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
  * home-page:http://www.liumapp.com
  */
 @EnableDiscoveryClient
-@SpringBootApplication(scanBasePackages = {"com.liumapp.demo.hystrix.client.b"})
+@SpringBootApplication(scanBasePackages = {"com.liumapp.demo.feign.client.b"})
 public class Main {
 
     public static void main(String[] args) {
