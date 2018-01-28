@@ -35,9 +35,9 @@
 	</dependencyManagement>
 
 	<modules>
-		<!--<module>feign-demo-eureka</module>-->
-		<!--<module>feign-demo-client-a</module>-->
-		<!--<module>feign-demo-client-b</module>-->
+		<module>feign-demo-eureka</module>
+		<module>feign-demo-client-a</module>
+		<module>feign-demo-client-b</module>
 		<module>feign-demo-customer</module>
 	</modules>
 </project>
