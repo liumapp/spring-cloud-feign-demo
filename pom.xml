@@ -35,9 +35,9 @@
 	</dependencyManagement>
 
 	<modules>
-		<module>hystrix-demo-eureka</module>
-		<module>hystrix-demo-client-a</module>
-		<module>hystrix-demo-client-b</module>
-		<module>hystrix-demo-customer</module>
+		<module>feign-demo-eureka</module>
+		<!--<module>hystrix-demo-client-a</module>-->
+		<!--<module>hystrix-demo-client-b</module>-->
+		<!--<module>hystrix-demo-customer</module>-->
 	</modules>
 </project>
