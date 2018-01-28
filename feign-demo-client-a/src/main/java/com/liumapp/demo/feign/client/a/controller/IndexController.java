@@ -1,4 +1,4 @@
-package com.liumapp.demo.hystrix.client.a.controller;
+package com.liumapp.demo.feign.client.a.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cloud.client.ServiceInstance;
