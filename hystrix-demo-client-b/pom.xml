@@ -3,13 +3,13 @@
   <modelVersion>4.0.0</modelVersion>
 
   <parent>
-    <groupId>com.liumapp.demo.hystrix</groupId>
-    <artifactId>spring-cloud-hystrix-demo</artifactId>
+    <groupId>com.liumapp.demo.feign</groupId>
+    <artifactId>spring-cloud-feign-demo</artifactId>
     <version>v1.0.0</version>
   </parent>
 
-  <groupId>com.liumapp.demo.hystrix.client.b</groupId>
-  <artifactId>hystrix-demo-client-b</artifactId>
+  <groupId>com.liumapp.demo.feign.client.b</groupId>
+  <artifactId>feign-demo-client-b</artifactId>
   <version>v1.0.0</version>
   <packaging>jar</packaging>
 
@@ -17,7 +17,7 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
 
-  <name>hystrix-demo-client-b</name>
+  <name>feign-demo-client-b</name>
   <url>http://maven.apache.org</url>
 
   <dependencies>
