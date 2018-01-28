@@ -3,4 +3,4 @@
  * E-mail:liumapp.com@gmail.com
  * home-page:http://www.liumapp.com
  */
-package com.liumapp.demo.hystrix.customer;
+package com.liumapp.demo.feign.customer;

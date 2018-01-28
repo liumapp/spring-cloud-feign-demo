@@ -1,4 +1,4 @@
-package com.liumapp.demo.hystrix.customer;
+package com.liumapp.demo.feign.customer;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -15,7 +15,7 @@ import org.springframework.web.client.RestTemplate;
  */
 @EnableDiscoveryClient
 @EnableCircuitBreaker
-@SpringBootApplication(scanBasePackages = {"com.liumapp.demo.hystrix.customer"})
+@SpringBootApplication(scanBasePackages = {"com.liumapp.demo.feign.customer"})
 public class Main {
 
     @Bean
