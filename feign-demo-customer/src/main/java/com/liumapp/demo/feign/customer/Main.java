@@ -16,15 +16,8 @@ import org.springframework.web.client.RestTemplate;
  */
 @EnableDiscoveryClient
 @EnableFeignClients
-@EnableCircuitBreaker
 @SpringBootApplication(scanBasePackages = {"com.liumapp.demo.feign.customer"})
 public class Main {
-
-    @Bean
-    @LoadBalanced
-    public RestTemplate restTemplate () {
-        return new RestTemplate();
-    }
 
     public static void main(String[] args) {
         SpringApplication.run(Main.class , args);
