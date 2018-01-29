@@ -36,6 +36,11 @@
       <groupId>org.springframework.cloud</groupId>
       <artifactId>spring-cloud-starter-eureka</artifactId>
     </dependency>
+    <dependency>
+      <groupId>com.liumapp.demo.feign.api</groupId>
+      <artifactId>feign-demo-api</artifactId>
+      <version>v1.0.0</version>
+    </dependency>
   </dependencies>
 
   <build>
