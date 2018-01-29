@@ -1,6 +1,6 @@
 package com.liumapp.demo.feign.client.a.controller;
 
-import com.liumapp.demo.feign.client.a.entity.User;
+import com.liumapp.demo.feign.api.entity.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cloud.client.ServiceInstance;
 import org.springframework.cloud.client.discovery.DiscoveryClient;
