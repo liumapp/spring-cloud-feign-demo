@@ -1,12 +1,11 @@
 package com.liumapp.demo.feign.client.b.controller;
 
+import com.liumapp.demo.feign.client.b.entity.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cloud.client.ServiceInstance;
 import org.springframework.cloud.client.discovery.DiscoveryClient;
-import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.Random;
 
@@ -31,6 +30,21 @@ public class IndexController {
         Thread.sleep(sleepTime);
 
         return "hello , this is client b demo";
+    }
+
+    @RequestMapping(value = "/hello1")
+    public String hello (@RequestParam String name) {
+        return "Hello " + name;
+    }
+
+    @RequestMapping(value = "/hello2")
+    public User hello (@RequestHeader String name , @RequestHeader Integer age) {
+        return new User(name , age);
+    }
+
+    @RequestMapping(value = "/hello3")
+    public String hello (@RequestBody User user) {
+        return "Hello " + user.getName() + " , is your age " + user.getAge() + " ? ";
     }
 
 }
