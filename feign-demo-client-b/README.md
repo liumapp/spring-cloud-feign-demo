@@ -1,1 +1,1 @@
-# Eureka-demo-client-b
+# Feign-demo-client-b

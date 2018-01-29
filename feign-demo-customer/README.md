@@ -1,1 +1,1 @@
-# Eureka-demo-customer-a
+# Feign-demo-customer
