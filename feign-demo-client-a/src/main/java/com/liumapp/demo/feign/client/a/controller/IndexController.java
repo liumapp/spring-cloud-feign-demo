@@ -5,6 +5,7 @@ import org.springframework.cloud.client.ServiceInstance;
 import org.springframework.cloud.client.discovery.DiscoveryClient;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.Random;
@@ -31,5 +32,12 @@ public class IndexController {
 
         return "Hello , this is client a demo ";
     }
+
+    @RequestMapping(value = "/hello1")
+    public String hello(@RequestParam String name) {
+        return "Hello " + name;
+    }
+
+    
 
 }
