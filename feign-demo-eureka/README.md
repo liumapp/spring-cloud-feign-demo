@@ -1,2 +1,2 @@
-# eureka-server-demo
-A simple Spring Cloud Eureka server demo . 
+# feign-demo-eureka
+A simple Spring Cloud eureka demo . 
