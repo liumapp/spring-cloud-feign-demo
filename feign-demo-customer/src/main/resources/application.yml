@@ -10,3 +10,10 @@ eureka:
 server:
   port: 8083
 
+demo-client:
+  ribbon:
+    ConnectTimeout: 500
+    ReadTimeout: 2000
+    OkToRetryOnAllOperations: true
+    MaxAutoRetriesNextServer: 2
+    MaxAutoRetries: 1
