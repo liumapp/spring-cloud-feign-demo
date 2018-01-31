@@ -39,6 +39,6 @@
 		<module>feign-demo-client-a</module>
 		<module>feign-demo-client-b</module>
 		<module>feign-demo-customer</module>
-    <module>feign-demo-api</module>
-  </modules>
+    	<module>feign-demo-api</module>
+  	</modules>
 </project>
