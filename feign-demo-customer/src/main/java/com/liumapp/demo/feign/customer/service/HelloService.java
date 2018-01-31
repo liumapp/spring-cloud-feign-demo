@@ -1,6 +1,6 @@
 package com.liumapp.demo.feign.customer.service;
 
-import com.liumapp.demo.feign.customer.entity.User;
+import com.liumapp.demo.feign.api.entity.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cloud.netflix.feign.FeignClient;
 import org.springframework.web.bind.annotation.RequestBody;
