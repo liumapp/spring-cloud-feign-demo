@@ -12,9 +12,18 @@ server:
 
 demo-client:
   ribbon:
-    ConnectTimeout: 500
-    ReadTimeout: 100
+    ConnectTimeout: 2000
+    ReadTimeout: 5000
     OkToRetryOnAllOperations: true
     MaxAutoRetriesNextServer: 2
     MaxAutoRetries: 1
 
+feign:
+  hystrix:
+    enabled: true
+    command:
+      default:
+        execution:
+          isolation:
+            thread:
+              timeoutInMilliseconds: 10000
