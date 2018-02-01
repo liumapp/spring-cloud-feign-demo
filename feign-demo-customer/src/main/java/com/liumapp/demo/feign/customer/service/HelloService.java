@@ -1,6 +1,7 @@
 package com.liumapp.demo.feign.customer.service;
 
 import com.liumapp.demo.feign.api.entity.User;
+import com.liumapp.demo.feign.customer.fallback.HelloServiceFallBack;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cloud.netflix.feign.FeignClient;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -14,7 +15,7 @@ import org.springframework.web.client.RestTemplate;
  * E-mail:liumapp.com@gmail.com
  * home-page:http://www.liumapp.com
  */
-@FeignClient("demo-client")
+@FeignClient(value = "demo-client" , fallback = HelloServiceFallBack.class)
 public interface HelloService {
 
     @RequestMapping("/")
@@ -24,7 +25,7 @@ public interface HelloService {
     String hello (@RequestParam("name") String name);
 
     @RequestMapping("/hello2")
-    String hello (@RequestHeader("name") String name , @RequestHeader("age") Integer age);
+    User hello (@RequestHeader("name") String name , @RequestHeader("age") Integer age);
 
     @RequestMapping("/hello3")
     String hello (@RequestBody User user);

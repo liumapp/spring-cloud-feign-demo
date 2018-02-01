@@ -12,8 +12,8 @@ server:
 
 demo-client:
   ribbon:
-    ConnectTimeout: 2000
-    ReadTimeout: 5000
+    ConnectTimeout: 4000
+    ReadTimeout: 6000
     OkToRetryOnAllOperations: true
     MaxAutoRetriesNextServer: 2
     MaxAutoRetries: 1
