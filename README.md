@@ -13,6 +13,6 @@ A simple demo for Spring Cloud Feign
 
     * keep refresh the page , you can find client a and client b will be used . 
     
-    * close client a and client b , you can find hystrix already working . 
+    * close client a and client b , and refresh again , than you can find hystrix already working . 
     
 
